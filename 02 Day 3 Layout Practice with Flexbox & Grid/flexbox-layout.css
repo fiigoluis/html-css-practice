@@ -73,3 +73,43 @@ li{
     max-width: 100%;
 }
 
+.menu_bar{
+    display: none;
+}
+
+@media(max-width: 768px){
+
+    body{
+        padding: 0 1rem 1rem 1rem;
+    }
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .left, .right{
+        width: 100%;
+    }
+
+    .right p{
+        font-size:1.6rem
+    }
+
+    .left img{
+        width: 100%;
+        height: auto;
+        border-radius: 0 99rem 0 99rem  ;
+    }
+
+    .nav_link{
+        display: none;
+    }
+
+    .menu_bar{
+        display: block;
+    }
+
+
+    
+
+}
