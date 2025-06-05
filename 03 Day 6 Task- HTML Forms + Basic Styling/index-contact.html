@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+   <header> <!-- Header -->
+        <img class="resized_image" src="./Logo.png" alt="Company Logo"> <!-- Logo -->
+        <nav> <!-- Nav links -->
+            <ul>
+                <li>About</li>
+                <li id="selected">Team</li>
+                <li class="dropdown"><span>Services</span><i class="material-icons">expand_more</i></li>
+                <li>Fees</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div id="ctaContainer"> <!-- Cta button -->
+            <button class="fancy-button"><span class="arrow_wrap">Reach out to us</span><i class="material-icons arrow_forward">arrow_forward</i></button>
+            <button class="no_fill"><img src="./magnifier.svg" alt="search icon" class="search_icon" /></button>
+        </div>
+   </header>
+
+  <main>
+    <section>
+        <h1>
+            Get in touch
+        </h1>
+        <div class="container">
+            <div class="top-container">
+                <p> Reach out to us to make an enquiry or book an appointment. Simply fill in the enquiry form or give us a call</p>
+                <div class="address">
+                    <p><span class="my-span">Email:</span> talk@luiseichie.com.ng</p>
+                    <p><span class="my-span">Phone:</span> (+234)7026745732</p>
+                    <p><span class="my-span">Fax:</span> (+234)9057899188</p>
+                </div>
+            </div>
+            <div class="down-container">
+                <h3 class="my-span">Our clinics:</h3>
+                <ul>
+                    <li class="footer-link">St Kilda<i class="material-icons arrow_downward">arrow_downward</i></li>
+                    <li class="footer-link">Carlton<i class="material-icons arrow_downward">arrow_downward</i></li>
+                    <li class="footer-link">Geelong<i class="material-icons arrow_downward">arrow_downward</i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <form class="contact-form">
+        <div class="top">
+            <h2>Online Enquiry</h2>
+            <div class="p">
+                <p>Please feel free to get in touch at any time.</p>
+                <p>We look forward to supporting you.</p>
+            </div>
+        </div>
+
+        <div class="meduim">
+                <div class="first-last-name">
+                    <label for="first-name" class="visually-hidden">First Name *</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required/>
+                    <label for="last-name" class="visually-hidden">Last Name *</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required/>
+                </div>
+
+                <div class="email-phone">
+                    <label for="email" class="visually-hidden">Email *</label>
+                    <input type="text" id="email" name="email" placeholder="Email" required/>
+                    <label for="phone" class="visually-hidden">Phone *</label>
+                    <input type="text" id="phone" name="phone" placeholder="Phone" required/>
+                </div>
+                <label for="message" class="visually-hidden">Type your message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your message" ></textarea>
+        </div>
+
+        <div class="bottom">
+            <button type="submit">Submit</button>
+            <p>* All fields are required</p>
+        </div>
+
+
+    </form>
+  </main>
+
+    
+</body>
+</html>
