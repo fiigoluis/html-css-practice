@@ -56,34 +56,33 @@
     </section>
 
     <form class="contact-form">
+        <div class="top-form">
         <div class="top">
             <h2>Online Enquiry</h2>
-            <div class="p">
-                <p>Please feel free to get in touch at any time.</p>
-                <p>We look forward to supporting you.</p>
-            </div>
+            <p>Please feel free to get in touch at any time.<br>We look forward to supporting you.</p>
         </div>
 
         <div class="meduim">
                 <div class="first-last-name">
-                    <label for="first-name" class="visually-hidden">First Name *</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required/>
-                    <label for="last-name" class="visually-hidden">Last Name *</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required/>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name *" required/>
+                    <label for="first-name" class="visually-hidden"></label>
+                    <label for="last-name" class="visually-hidden"></label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name *" required/>
                 </div>
 
-                <div class="email-phone">
-                    <label for="email" class="visually-hidden">Email *</label>
-                    <input type="text" id="email" name="email" placeholder="Email" required/>
-                    <label for="phone" class="visually-hidden">Phone *</label>
-                    <input type="text" id="phone" name="phone" placeholder="Phone" required/>
+                <div class="first-last-name">
+                    <input type="text" id="email" name="email" placeholder="Email *" required/>
+                    <label for="email" class="visually-hidden"></label>
+                    <label for="phone" class="visually-hidden"></label>
+                    <input type="text" id="phone" name="phone" placeholder="Phone *" required/>
                 </div>
-                <label for="message" class="visually-hidden">Type your message</label>
+                <label for="message" class="visually-hidden"></label>
                 <textarea id="message" name="message" rows="5" placeholder="Type your message" ></textarea>
+        </div>
         </div>
 
         <div class="bottom">
-            <button type="submit">Submit</button>
+            <button type="submit" class="button2">Submit your enquiry</button>
             <p>* All fields are required</p>
         </div>
 
