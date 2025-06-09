@@ -3,8 +3,8 @@
 }
 
 body{
-    padding: 0 2rem 2rem 2rem;
-    font-family: 'DM Sans', sans-serif;
+    padding: 0 var(--spacing-lg) var(--spacing-lg)  var(--spacing-lg);
+    font-family: var(--font-main);
     display: grid;
     grid-template-rows: auto;
     gap: 3rem;
@@ -14,7 +14,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 0.3fr;
     justify-content: space-between;
-    padding: 1rem 1.5rem 1rem 1rem;
+    padding: var(--spacing-md) 1.5rem var(--spacing-md) var(--spacing-md);
     border: solid 0.063rem #f1f1f1;
     height: fit-content;
     align-items: center;
@@ -30,7 +30,7 @@ ul{
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(4, auto);
-    gap: 0.5rem;
+    gap: var(--spacing-sm);
     padding: 0;
     margin: 0;
     
@@ -62,7 +62,7 @@ li{
 }
 
 .left h2{
-    font-size: 1rem;
+    font-size: var(--spacing-md);
     font-weight: 300;
 }
 
@@ -71,9 +71,9 @@ li{
 }
 
 .right p{
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-main);
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 100;
     width: 100%;
     color: rgb(38, 38, 38);
     font-style: italic;

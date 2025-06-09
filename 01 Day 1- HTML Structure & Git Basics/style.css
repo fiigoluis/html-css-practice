@@ -3,10 +3,10 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: var(--font-main);
     line-height: 1.4;
-    padding: 1rem 5rem;
-    background-color: #FDFBF5;
+    padding: var(--spacing-md) 5rem;
+    background-color: var(--background-color);
 }
 
 /* Header */
@@ -30,10 +30,10 @@ header {
 li {
     list-style-type: none;
     text-transform: uppercase;
-    padding: 0.5rem;
+    padding: var(--spacing-sm);
     font-size: 0.9rem;
     align-content: center;
-    color: #2e4c47d1;
+    color: var(--primary-color-navbar);
 }
 
 .dropdown {
@@ -44,7 +44,7 @@ li {
 
 .material-icons{
     align-items: center;
-    color: #2E4C47;
+    color: var(--primary-color);
 }
 
 ul{
@@ -59,16 +59,16 @@ ul{
 .fancy-button {
   position: relative;
   overflow: hidden;
-  padding: 0.5rem 0.5rem 0.5rem 1.25rem;
-  background-color: #CCEDE0;
+  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) 1.25rem;
+  background-color: var(--secondary-color);
   border: none;
   border-radius: 6.188rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--spacing-sm);
   font-size: 0.9rem;
   font-weight: 200;
-  color: #2E4C47;
+  color: var(--primary-color);
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -80,7 +80,7 @@ ul{
   left: 0;
   height: 0;
   width: 100%;
-  background-color: #2E4C47;
+  background-color: var(--primary-color);
   transition: height 0.35s ease;
   z-index: 1;
 }
@@ -98,7 +98,7 @@ ul{
 
 .fancy-button:hover span,
 .fancy-button:hover .arrow_forward {
-  color: #FDFBF5;
+  color: var(--background-color);
 }
 
 
@@ -108,16 +108,16 @@ ul{
   position: relative;
   overflow: hidden;
   z-index: 0;
-  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+  padding: var(--spacing-sm) 1.25rem var(--spacing-sm) var(--spacing-sm);
   background-color: transparent;
-  border: 0.063rem solid #2E4C47;
+  border: 0.063rem solid var(--primary-color);
   border-radius: 6.188rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--spacing-sm);
   font-size: 0.9rem;
   font-weight: 200;
-  color: #2E4C47;
+  color: var(--primary-color)7;
   width: fit-content;
   transition: color 0.3s ease;
 }
@@ -129,7 +129,7 @@ ul{
   left: 0;
   width: 100%;
   height: 0%;
-  background-color: #2E4C47;
+  background-color: var(--primary-color);
   z-index: -1;
   transition: height 0.35s ease;
   border-radius: 6.188rem;
@@ -140,14 +140,14 @@ ul{
 }
 
 .fancy-button2:hover {
-  color: #FDFBF5;
+  color:var(--background-color);
   transform: scale(1.03);
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .fancy-button2 .arrow_back {
-  background-color: #2E4C47;
-  color: #f4ebd0;
+  background-color: var(--primary-color);
+  color:var(--background-color);
   border-radius: 99rem;
   padding: 0.25rem;
 }
@@ -158,7 +158,7 @@ ul{
     align-items: center;
     background: none;
     border: none;
-    padding: 0.5rem;
+    padding: var(--spacing-sm);
     cursor: pointer;
 }
 
@@ -168,8 +168,8 @@ ul{
 }
 
 .arrow_forward{
-    background-color: #2E4C47;
-    color: #f4ebd0;
+    background-color: var(--primary-color);
+    color:var(--background-color);
     border-radius: 6.188rem;
     padding: 0.25rem;
 }
@@ -180,7 +180,7 @@ ul{
 }
 
 .search_icon{
-    color: #2e4c47ae;
+    color: var(--primary-color-navbar);
 }
 
 article{
@@ -208,7 +208,7 @@ main{
 
 #aboutSummary{
     display: flex;
-    gap: 2rem;
+    gap: var(--spacing-lg);
     justify-items: start;
     justify-content: space-between;
     width: fit-content;
@@ -220,8 +220,8 @@ main{
 }
 
 .titleTag h3{
-    padding: 0.125rem 0.5rem;
-    background-color: #f5efdf;
+    padding: 0.125rem var(--spacing-sm);
+    background-color: var(--background-color);
     align-content: center;
     text-align: center;
     font-size: small;
@@ -242,7 +242,7 @@ main{
 
 
 .topAboutUs h1{
-    font-family: 'Newsreader', serif;
+    font-family: var(--font-accent);
     font-size:6rem;
     font-weight: 200;
     line-height:1;
@@ -253,12 +253,12 @@ main{
 .topAboutUs h3 {
   margin: 0;
   padding: 0;
-  font-size: 2rem;
+  font-size: var(--spacing-lg);
   font-weight: 200;
 }
 
 .blockContent2{
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 var(--spacing-lg);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -267,13 +267,13 @@ main{
 }
 
 .aboutUs{
-    gap: 2rem;
+    gap: var(--spacing-lg);
 }
 
 .aboutUs p{
     font-size: 1.5rem;
     line-height: 1.4;
-    color: #2E4C47;
+    color: var(--primary-color);
     font-weight: 200;
 }
 
@@ -296,11 +296,11 @@ main{
 @media (max-width: 768px) {
   header, main, article {
     flex-direction: column;
-    padding: 1rem;
+    padding: var(--spacing-md);
   }
 
   .blockContent, .blockContent2 {
-    padding: 1rem 0;
+    padding: var(--spacing-md) 0;
   }
 
   .topAboutUs h1 {
@@ -308,6 +308,6 @@ main{
   }
 
   .aboutUs p {
-    font-size: 1rem;
+    font-size: var(--spacing-md);
   }
 }

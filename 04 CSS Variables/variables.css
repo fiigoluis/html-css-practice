@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Newsreader&display=swap');
+
+:root {
+  --primary-color: #2E4C47;
+  --primary-color-navbar: #2e4c47b6;
+  --secondary-color: #CCEDE0;
+  --form-color: #FDF4DF;
+  --background-color: #FDFBF6;
+  --font-main: 'Manrope', sans-serif;
+  --font-accent: 'Newsreader', serif;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+}
