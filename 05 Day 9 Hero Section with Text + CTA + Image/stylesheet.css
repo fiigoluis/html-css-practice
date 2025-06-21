@@ -23,6 +23,13 @@ header {
   z-index: 10;
 }
 
+.right-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
 .resized_image{
     width:3rem;
     height: auto;
@@ -33,7 +40,7 @@ li a{
     list-style-type: none;
     text-transform: uppercase;
     padding: var(--spacing-sm);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     align-content: center;
     color: var(--primary-color-navbar);
 }
@@ -126,6 +133,20 @@ ul{
     align-items: center;
 }
 
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    gap: 0.25rem;
+    cursor: pointer;
+}
+
+.menu-toggle span{
+    height: 0.08rem;
+    width: 1.25rem;
+    background-color: var(--primary-color);
+    border-radius: 0.0623rem;
+}
+
 /* Button 1 */
 .fancy-button {
   position: relative;
@@ -196,7 +217,8 @@ ul{
 
 #ctaContainer{
     display: flex;
-    gap: 0.25rem;
+    gap: 1rem;
+    align-items: center;
 }
 
 .search_icon{
@@ -210,7 +232,6 @@ article{
 
 
 /* Main */
-
 
 .hero-video {
   position: absolute;
@@ -245,6 +266,7 @@ article{
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
+    gap: 5rem;
 }
 
 p{
@@ -256,12 +278,18 @@ p{
     font-weight:800;
 }
 
+.top-hero{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
 
 .body-content{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     padding-top: 0;
     border-top: solid 0.0625rem var(--background-color);
@@ -282,4 +310,71 @@ p{
     gap: var(--spacing-sm);
     font-size: 1.5rem;
     font-weight: 200;
+}
+
+@media (max-width: 1200px) {
+    body{
+        padding: var(--spacing-md) 2rem;
+    }
+    .navbar ul{
+        gap: var(--spacing-md)
+    }
+}
+
+@media (max-width: 1103px) {
+    .hero-text{
+        font-size: 6rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 910px) {
+    .menu-toggle{
+        display: flex;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar ul.open {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .body-content{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 816px) {
+    .hero-text{
+        font-size: 5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .body-content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 490px) {
+    .fancy-button{
+        display: none;
+    }
+
+    .hero-text{
+        font-size: 4rem;
+    }
+
+    .animation-scroll-down{
+        font-size: 1rem;
+    }
+
+    
 }
