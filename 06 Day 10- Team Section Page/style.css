@@ -200,6 +200,56 @@ ul{
   color: var(--background-color);
 }
 
+/* Button 2 */
+
+.fancy-button2 {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) 1.25rem;
+  background-color: transparent;
+  border: 0.063rem solid var(--primary-color);
+  border-radius: 6.188rem;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: var(--primary-color)7;
+  width: fit-content;
+  transition: color 0.3s ease;
+}
+
+.fancy-button2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: var(--primary-color);
+  z-index: -1;
+  transition: height 0.35s ease;
+  border-radius: 6.188rem;
+}
+
+.fancy-button2:hover::after {
+  height: 100%;
+}
+
+.fancy-button2:hover {
+  color:var(--background-color);
+  transform: scale(1.03);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fancy-button2 .arrow_back {
+  background-color: var(--primary-color);
+  color:var(--background-color);
+  border-radius: 99rem;
+  padding: 0.25rem;
+}
+
 .no_fill{
     align-items: center;
     background: none;
@@ -324,6 +374,7 @@ main{
     gap: var(--spacing-sm);
 }
 
+
 .filter-tag{
     font-size: var(--spacing-md);
     font-weight: 200;
@@ -334,4 +385,66 @@ main{
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
+}
+
+li a{
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.grid-holder-a{
+   display: grid;
+   grid-template-columns: (4, 1fr);
+   gap: var(--spacing-lg);
+   width: 100%;
+}
+
+.team-card{
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    padding-bottom:5rem;
+    background-color: #a6a6a61a;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.bottom-card{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+
+.team-detail h3{
+    font-family: var(--font-accent);
+    font-size: var(--spacing-lg);
+    font-weight: 200;
+    color: var(--primary-color);
+    line-height: 0;
+}
+
+.team-detail p{
+    font-family: var(--font-main);
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    line-height: 0.5;
+}
+
+.member-tag{
+    padding: 0.125rem 0.5rem;
+    background-color: #3a3a3a1a;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 99rem;
+}
+
+.member-tag p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 0;
 }
