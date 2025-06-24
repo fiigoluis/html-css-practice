@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team</title>
-    <link rel="stylesheet" href="../04 CSS Variables/">
+    <link rel="stylesheet" href="../04 CSS Variables/variables.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
-    <header> <!-- Header -->
+   <header> <!-- Header -->
         <img class="resized_image" src="./Logo.png" alt="Company Logo"> <!-- Logo -->
+        <div class="right-header">
         <nav class="navbar"> <!-- Nav links -->
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>         
-            </div>
             <ul>
 
                 <li class="dropdownii"><a href="#">About</a></li>
@@ -50,7 +47,13 @@
         </nav>
         <div id="ctaContainer"> <!-- Cta button -->
             <button class="fancy-button"><span class="arrow_wrap">Reach out to us</span><i class="material-icons arrow_forward">arrow_forward</i></button>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>         
+            </div>
             <button class="no_fill"><img src="./magnifier.svg" alt="search icon" class="search_icon" /></button>
+        </div>
         </div>
    </header>
 
@@ -70,19 +73,19 @@
                 <div class="filter">
                     <div class="left">
                         <div class="top">
-                            <div class="left"><p>Filter by clinic location</p></div>
-                            <div class="right">
+                            <div class="left-top"><p>Filter by clinic location</p></div>
+                            <div class="right-top">
                                 <ul>
-                                    <li><div class="filter-tag"><a href="#"></a><i class="material-icons">arrow_circle_right</i>St Kilda</div></li>
+                                    <li><div class="filter-tag"><a href="#"></a><i class="material-icons">radio_button_unchecked</i>St Kilda</div></li>
                                     <li><div class="filter-tag"><a href="#"></a><i class="material-icons">arrow_circle_right</i>Carlton</div></li>
                                     <li><div class="filter-tag"><a href="#"></a><i class="material-icons">arrow_circle_right</i>Geelong</div></li>
                                     <li><div class="filter-tag"><a href="#"></a><i class="material-icons">arrow_circle_right</i>Colac</div></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="bottom">
-                            <div class="left"><p>Filter by practice areas</p></div>
-                            <div class="right">
+                        <div class="top">
+                            <div class="left-top"><p>Filter by practice areas</p></div>
+                            <div class="right-top">
                                 <ul>
                                     <li><div class="filter-tag"><a href="#"></a><i class="material-icons">arrow_circle_right</i>Relationship</div></li>
                                     <li><div class="filter-tag"><a href="#"></a><i class="material-icons">arrow_circle_right</i>Assessments</div></li>
