@@ -218,6 +218,7 @@ ul{
   color: var(--primary-color)7;
   width: fit-content;
   transition: color 0.3s ease;
+  margin-top: var(--spacing-md);
 }
 
 .fancy-button2::after {
@@ -395,8 +396,17 @@ li a{
 
 .grid-holder-a{
    display: grid;
-   grid-template-columns: (4, 1fr);
-   gap: var(--spacing-lg);
+   grid-template-columns: repeat(4, 1fr);
+   column-gap: var(--spacing-lg);
+   row-gap: 2rem;
+   width: 100%;
+}
+
+.grid-holder-b{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   column-gap: 4rem;
+   row-gap: 2rem;
    width: 100%;
 }
 
@@ -407,15 +417,17 @@ li a{
     padding-right: var(--spacing-md);
     padding-top: var(--spacing-md);
     padding-bottom:5rem;
-    background-color: #a6a6a61a;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    border-top-left-radius: 99rem;
+    border-top-right-radius: 99rem;
+    align-items: center;
 }
 
 .bottom-card{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
+    justify-content: left;
+    width: 100%;
 }
 
 
@@ -424,7 +436,7 @@ li a{
     font-size: var(--spacing-lg);
     font-weight: 200;
     color: var(--primary-color);
-    line-height: 0;
+    margin: 0;
 }
 
 .team-detail p{
@@ -446,5 +458,93 @@ li a{
 .member-tag p{
     font-size: 0.9rem;
     font-weight: 500;
+    margin: 0;
+}
+
+.team-image{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 99rem;
+    border-top-right-radius: 99rem;
+}
+
+
+/* Section Join Us */
+
+
+.join-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-join-us{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-lg);
+    width: 50%;
+    padding: 3rem;
+}
+
+.image-join-us{
+    width: 30%;
+    height: auto;
+    border-radius: 99rem;
+}
+
+.right-join-us{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 3rem;
+    gap: var(--spacing-lg);
+    background-color: var(--background-color-secondary);
+}
+
+.right-join-us h4{
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 0;
+    font-family: var(--font-accent);
+}
+
+.right-join-us p{
+    font-size: var(--spacing-md);
     line-height: 0;
+    font-weight: 300;
+    margin-bottom: var(--spacing-lg);
+}
+
+.right-text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.top-text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.top-text h3{
+    font-size: var(--spacing-lg);
+    font-weight: 200;
+    line-height: 1.4;
+    margin: 0;
+    font-family: var(--font-accent);
+}
+
+.top-text p{
+    font-size: var(--spacing-md);
+    font-weight: 300; 
+    margin: 0;
+}
+
+.bottom-text p{
+    font-size: var(--spacing-md);
+    font-weight: 300; 
+    margin: 0;
 }
