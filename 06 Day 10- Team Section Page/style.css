@@ -61,10 +61,6 @@ li a{
   text-decoration-line: none;
 }
 
-.dropdownii a{
-  text-decoration-line: none;
-}
-
 li .dropdown-content{
   display: none;
   position:absolute;
@@ -215,7 +211,7 @@ ul{
   gap: var(--spacing-sm);
   font-size: 0.9rem;
   font-weight: 200;
-  color: var(--primary-color)7;
+  color: var(--primary-color);
   width: fit-content;
   transition: color 0.3s ease;
   margin-top: var(--spacing-md);
@@ -299,7 +295,7 @@ main{
 .meet_the_team h1{
     font-size: 6rem;
     font-family: var(--font-accent);
-    line-height: 0;
+    margin: 0;
     font-weight: 200;
     color: var(--primary-color);
 }
@@ -367,6 +363,7 @@ main{
     font-size: var(--spacing-md);
     font-weight: 700;
     color: var(--primary-color);
+    margin: 0;
 }
 
 .right-top ul{
@@ -422,6 +419,24 @@ li a{
     align-items: center;
 }
 
+.team-card-b{
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    padding-bottom:5rem;
+    border-top-left-radius: 99rem;
+    border-top-right-radius: 99rem;
+    align-items: center;
+}
+
+.top-card{
+  overflow: hidden;
+  border-top-left-radius: 99rem;
+  border-top-right-radius: 99rem;
+}
+
 .bottom-card{
     display: flex;
     flex-direction: column;
@@ -444,7 +459,9 @@ li a{
     font-size: 1.25rem;
     font-weight: 300;
     color: var(--primary-color);
-    line-height: 0.5;
+    line-height: 1.4;
+    width: auto;
+    margin: 0;
 }
 
 .member-tag{
@@ -468,9 +485,7 @@ li a{
     border-top-right-radius: 99rem;
 }
 
-
 /* Section Join Us */
-
 
 .join-us{
     display: flex;
@@ -512,7 +527,6 @@ li a{
 
 .right-join-us p{
     font-size: var(--spacing-md);
-    line-height: 0;
     font-weight: 300;
     margin-bottom: var(--spacing-lg);
 }
@@ -547,4 +561,131 @@ li a{
     font-size: var(--spacing-md);
     font-weight: 300; 
     margin: 0;
+}
+
+/* Hover animation */
+
+.filter-tag:hover{
+  background-color: var(--secondary-color-2);
+}
+
+.team-card:hover{
+  background-color: var(--secondary-color-2);
+}
+
+img:hover{
+  transform: scale(1.06);
+}
+
+img{
+  transition: all 0.3s ease;
+}
+.filter-tag,
+.team-card{
+  transition: all 0.3s ease;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1200px) {
+    body{
+        padding: var(--spacing-md) 2rem;
+    }
+    .navbar ul{
+        gap: var(--spacing-md)
+    }
+}
+
+
+@media (max-width: 1040px) {
+    .menu-toggle{
+        display: flex;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar ul.open {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .top{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--spacing-sm);
+    }
+
+  .filter{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: var(--spacing-md);
+  }
+
+  .left{
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-lg);
+  }
+
+  .grid-holder-a{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: var(--spacing-lg);
+   row-gap: 2rem;
+   width: 100%;
+  }
+
+  .grid-holder-b{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 4rem;
+   row-gap: 2rem;
+   width: 100%;
+  }
+
+  .join-us{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    align-items: center;
+  }
+
+  .left-join-us{
+    width: 100%;
+  }
+
+  .right-join-us{
+    width: 100%;
+    gap: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-holder-b{
+   grid-template-columns: repeat(2, 1fr);
+  }
+
+  .right-top ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 490px) {
+  .grid-holder-b{
+   grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-holder-a{
+   grid-template-columns: repeat(1, 1fr);
+  }
+
+  .fancy-button{
+    display: none;
+  }
 }
