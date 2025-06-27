@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="../04 CSS Variables/variables.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header> <!-- Header -->
+        <img class="resized_image" src="./Logo.png" alt="Company Logo"> <!-- Logo -->
+        <div class="right-header">
+        <nav class="navbar"> <!-- Nav links -->
+            <ul>
+
+                <li class="dropdownii"><a href="#">About</a></li>
+
+                <li class="dropdownii"><a href="#">Team</a></li>
+
+                <li id= "selected"class="dropdownii">
+                    <div class="dropdown"><a href="#">Services</a> <i class="material-icons">keyboard_arrow_down</i></div>
+                    <ul class="dropdown-content">
+                        <li><div class="list"><a href="#">General Psychology Services</a> <i class="material-icons">arrow_circle_right</i></div></li>
+                        <li><div class="list"><a href="#">Gender Service</a> <i class="material-icons">arrow_circle_right</i></div></li>
+                        <li><div class="list"><a href="#">Autism and ADHD assessments</a> <i class="material-icons">arrow_circle_right</i></div></li>
+                        <li><div class="list"><a href="#">Cognitive and academic assessments</a> <i class="material-icons">arrow_circle_right</i></div></li>
+                        <li><div class="list"><a href="#">Groups Therapy Programs</a> <i class="material-icons">arrow_circle_right</i></div></li>
+                        <li><div class="list-last"><a href="#">Our Research</a> <i class="material-icons">arrow_circle_right</i></div></li>
+                    </ul>
+                </li>
+
+                <li class="dropdownii"><a href="#">Fees</a></li>
+
+                <li class="dropdownii"><a href="#">Blog</a></li>
+
+                <li class="dropdownii"><a href="#">Contacts</a></li>
+
+
+            </ul>
+        </nav>
+        <div id="ctaContainer"> <!-- Cta button -->
+            <button class="fancy-button"><span class="arrow_wrap">Reach out to us</span><i class="material-icons arrow_forward">arrow_forward</i></button>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>         
+            </div>
+            <button class="no_fill"><img src="./magnifier.svg" alt="search icon" class="search_icon" /></button>
+        </div>
+        </div>
+   </header>
+</body>
+</html>
